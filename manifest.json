@@ -1,8 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Middle Click Google Search",
-  "version": "1.2",
+  "name": "Middle Click Search",
+  "version": "2",
   "description": "Searches highlighted text on Google when middle-clicking.",
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
