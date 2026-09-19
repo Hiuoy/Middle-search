@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Middle Click Google Search",
+  "version": "1.0",
+  "description": "Searches highlighted text on Google when middle-clicking.",
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
