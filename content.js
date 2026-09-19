@@ -8,10 +8,7 @@ document.addEventListener('auxclick', function(event) {
       
       event.preventDefault();
       
-      const searchUrl = `https://google.com{encodeURIComponent(selectedText)}`;
-      
-      
-      window.open(searchUrl, '_blank');
+      chrome.runtime.sendMessage({ type: "SEARCH_TEXT", text: selectedText });
     }
   }
 });
